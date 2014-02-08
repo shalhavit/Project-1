@@ -21,13 +21,19 @@ header, footer {
 	line-height: 64px; /* By making the line-height as tall as the header, we vertically center the text */
 
 	color: #EEE;
-	font-family: "Lily Script One", cursive;
+	font-family: 'Averia Gruesa Libre', cursive;
 	font-size: 2em;
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 0.35em;
 
 	width: 100%;
+}
+
+footer {
+	font-size:1.5em;
+	letter-spacing: 0.20em;
+
 }
 
 
@@ -136,6 +142,9 @@ nav ol li {
 	padding: 0;
 	margin: 0;
 }
+nav ol li:hover {
+	background-color: #EEF279; 
+}
 
 .active-waypoint {
 	background-color: #D12121;
@@ -152,4 +161,7 @@ li div {
 
 	margin-right: auto;
 	margin-left: auto;	
+}
+li:hover div {
+	background-color:#000;
 }
