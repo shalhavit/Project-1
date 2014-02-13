@@ -38,6 +38,16 @@ function updateWaypoints() {
 	// Seek to the proportional time of the 38s clip of Bey's "Countdown"
 	document.getElementById('Countdown').currentTime = fractionScrolled * 38.0;
 }
+function triangleClickHandler(e) {
+ 	console.log('Tclick');
+ 	
+ 		if (triangle === this) {
+ 			scrolled = scrolled+100;
+ 			if (scrolled>1000){scrolled=0;}
+ 			updateWaypoints();
+			console.log(scrolled);
+}
+
 
 function waypointClickHandler(e) {
 	console.log('cilck');
