@@ -39,14 +39,13 @@ function updateWaypoints() {
 	document.getElementById('Countdown').currentTime = fractionScrolled * 38.0;
 }
 
-function triangleClickHandler(e) {
- 	console.log('Tclick');
- 	
- 		if (triangle === this) {
- 			scrolled = scrolled+100;
- 			if (scrolled>1000){scrolled=0;}
- 			updateWaypoints();
- 			console.log(scrolled);
+function waypointClickHandler(e) {
+	console.log('cilck');
+	for (i = 0; i < waypoints.length; i++) {
+		if (waypoints[i] === this) {
+			scrolled = (i+1)*100;
+			updateWaypoints();
+			console.log(scrolled);
 		}
 	}
 }
