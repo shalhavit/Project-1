@@ -101,9 +101,19 @@ aside {
 	position: absolute;
 }
 
-.right {
+.right.top {
 	right: calc(50% - 320px / 2 - 128px * 1.5);
-	background-color: #555;
+	background-color: black;
+  	-webkit-transition-property: background;
+  	-moz-transition: opacity 20s; /* Firefox */
+     -webkit-transition: opacity 20s; /* Safari and Chrome */
+     -o-transition: opacity 20s; /* Opera */
+     transition: opacity 20s
+   	-webkit-transition-timing-function: ease-in-out;
+}
+.right.top:hover {
+    background-image:url('./tryout8.jpg');
+    z-index: 9999;
 }
 
 .left {
