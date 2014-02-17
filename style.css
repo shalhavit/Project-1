@@ -67,6 +67,14 @@ video {
 
 	left: calc(50% - 320px / 2 - 128px * 1.5);
 	right: calc(50% - 320px / 2 - 128px * 1.5);
+	-webkit-transition-property: background;
+ 	-webkit-transition-duration: 10s;
+   	-webkit-transition-timing-function: ease-in-out;
+ }
+ 
+ #detail:hover{
+ background-image:url('./tryout8.jpg');
+ z-index: 9999;
 }
 
 /* Clever trick to make a triangle with CSS:
@@ -112,7 +120,7 @@ aside {
    	-webkit-transition-timing-function: ease-in-out;
 }
 .right.top:hover {
-    background-image:url('./tryout8.jpg');
+    background-image:url('./DSC_0569.jpg');
     z-index: 9999;
 }
 
