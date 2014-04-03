@@ -83,8 +83,8 @@ http://codepen.io/chriscoyier/pen/lotjh */
 #next-triangle {
 	position: absolute;
 
-	width: 0;
-	height: 0;
+	width: 20;
+	height: 20;
 
 	border-left: 61px solid transparent;
 	border-right: 61px solid transparent;
