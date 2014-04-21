@@ -38,6 +38,56 @@ function updateWaypoints() {
 	// Seek to the proportional time of the 38s clip of Bey's "Countdown"
 	document.getElementById('Countdown').currentTime = fractionScrolled * 47.0;
     document.getElementById('detail').getElementsByTagName('H1')[0].innerHTML= "Playback time at: "+document.getElementById('Countdown').currentTime+"s";
+// adds text to top left aside when scrolled reaches 200
+ 	var topleft = document.getElementsByClassName("left top");
+ 
+ 	if (scrolled >= 100 && scrolled < 300){
+ 		topleft[0].innerHTML = "Text appears";
+ 	} 
+ 	else {
+ 	    topleft[0].innerHTML = " ";
+ 	}
+ 
+ 	// adds text to bottom left aside when scrolled reaches 400
+ 	var bottomleft = document.getElementsByClassName("left bottom");
+ 
+ 	if (scrolled >= 200 && scrolled < 400){
+ 		bottomleft[0].innerHTML = "Text appears";
+ 	} 
+ 	else {
+ 	    bottomleft[0].innerHTML = " ";
+ 	}
+ 
+ 	// adds text to top right aside when scrolled reaches 600
+ 	var topright = document.getElementsByClassName("right top");
+ 
+ 	if (scrolled >= 400 && scrolled < 600){
+ 		topright[0].innerHTML = "Text appears";
+ 	} 
+ 	else {
+ 	    topright[0].innerHTML = " ";
+ 	}
+ 
+ 	// adds text to bottom right aside when scrolled reaches 800
+ 	var bottomright = document.getElementsByClassName("right bottom");
+ 
+ 	if (scrolled >= 500 && scrolled < 700){
+ 		bottomright[0].innerHTML = "Text appears";
+ 	} 
+ 	else {
+ 	    bottomright[0].innerHTML = " ";
+ 	}
+ 
+ 	//adds text to detail section
+ 	var detail = document.getElementById("detail");
+ 
+ 	if (scrolled >= 700) {
+ 		detail.innerHTML = "Text appears";
+ 	}
+ 	else {
+ 		detail.innerHTML = " ";
+ 	}
+
 }
 function triangleClickHandler(e) {
  	console.log('Tclick');
