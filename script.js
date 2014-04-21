@@ -71,18 +71,4 @@ function MouseWheelHandler(e) {
 	document.getElementsByTagName('header')[0].innerHTML = scrolled;
 	
 	updateWaypoints();
-
-
- 
- //applying click to next-triangle (based on tip from http://stackoverflow.com/questions/1057416/how-to-make-div-click-able)
- var next = document.getElementById('next-triangle');
- 
- next.onclick = function() {
-     // do something...
-     for (i = 0; i < waypoints.length; i++){
-     	scrolled = (i+1)*100;
-     	updateWaypoints();
-     	console.log(scrolled);
-     			
-     	
-     }
+}
