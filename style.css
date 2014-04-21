@@ -140,11 +140,11 @@ aside {
 }
 .right.top:hover {
     background-image:url('./DSC_0569.jpg');
-    z-index: 9999;
+    z-index: 999;
 }
 
 .left {
-	left: calc(50% - 32px / 2 - 12px * 1.5);
+	left: calc(50% - 320px / 2 - 128px * 1.5);
 	background-color: #CCC;
 }
 
